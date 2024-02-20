@@ -2,7 +2,7 @@ const userModel = require('../models/userModel')
 const cephStorage = require('../libs/cephStorage')
 
 exports.index = (req, res) => {
-    res.json({
+    res.status(200).json({
         data: userModel.getAll()
     })
 }
