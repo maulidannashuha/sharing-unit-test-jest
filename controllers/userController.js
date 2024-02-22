@@ -16,7 +16,7 @@ exports.create = (req, res) => {
 
     const user = userModel.insert(name)
 
-    return res.json({
+    return res.status(201).json({
         data: user,
         msg: 'Berhasil menambahkan user'
     })
