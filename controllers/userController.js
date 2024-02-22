@@ -11,7 +11,7 @@ exports.create = (req, res) => {
 
     if (!name)
         return res.status(422).json({
-            message: 'Name is required'
+            msg: 'Name is required'
         })
 
     const user = userModel.insert(name)

@@ -43,7 +43,7 @@ describe('userController.create', () => {
 
         expect(res.status).toBeCalledWith(422)
         expect(res.json).toBeCalledWith({
-            message: 'Name is required'
+            msg: 'Name is required'
         })
     })
 })
