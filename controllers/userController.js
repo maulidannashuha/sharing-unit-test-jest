@@ -9,10 +9,10 @@ exports.index = (req, res) => {
 exports.create = (req, res) => {
     const { name } = req.body
 
-    if (!name)
-        return res.status(422).json({
-            msg: 'Name is required'
-        })
+    // if (!name)
+    //     return res.status(422).json({
+    //         msg: 'Name is required'
+    //     })
 
     const user = userModel.insert(name)
 
